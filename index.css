@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 800px;
+    border: 5px solid olive;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 3px solid navy;
+}
+
+.big {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.frog {
+    background-color: aqua;
+    width: 450px;
+    border: 5px double olive;
+}
+
+h2 {
+    transition: background-color 400ms;
+    width: 550px;
+    border: 2px solid green;
+}
+
+.yeah {
+    transition: background-color 400ms;
+    width: 200px;
+    border: 2px solid green;
+    animation: float 1s infinite alternate;
+}
+
+h2:hover {
+    background-color: royalblue;
+    border: 3px dashed white;
+    color: wheat;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(200px);
+    }
+    10% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+}
